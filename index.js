@@ -4,29 +4,16 @@ const port = 3000
 
 //Se puede acceder a los archivo sin importar la ruta donde esten 
 const path = require('path') 
-app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use(express.static(__dirname + '/public'));
 
 //Establecer el motor que se va a usar
 app.set('view engine', 'ejs')
+
 //Donde van a estar guardadas las vistas
 app.set('views', __dirname + '/views')
 
-
-//El establecimiento de las rutas basicas que tiene eñ proyecto
-
-app.get('/', (req, res) => {
-  console.log(__dirname)
-  res.render('index')
-})
-
-
-app.get('/formacion', (req, res) => {
-  res.render('formacion')
-})
-
-app.get('/experiencia', (req, res) => {
-  res.render('experiencia')
-})
+//Rutas Web
+app.use('/Danna', require('./router/rutasWeb'));
 
 
 //Establecer la ruta al error
