@@ -1,0 +1,165 @@
+<%- include('templates/header'); %>
+    <link href="./../static/css/pasatiempos.css" rel="stylesheet">
+
+    <body>
+        <!--////////////IMAGEN PRINCIPAL////////////////////-->
+        <div class="hero" style="background-image: url('./../static/images/nubes.png');">
+            <div class="imagen_hero">
+            </div>
+        </div>
+        <br><br>
+
+        <!--//////Experiencia ////////-->
+        <section class="main container verticalLine">
+            <div class="col-4">
+                <h2 class=" titulo2"><b>Experiencia</h2></b><br>
+            </div>
+            <div class="col-10 ">
+                <div class="timeline">
+                    <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">2022</span>
+                        <div class="timeline__cards">
+                            <div class="timeline__card card">
+                                <header class="card__header">
+                                    <time class="time" datetime="2008-09-01">
+                                        <span class="time__month">Junio</span>
+                                    </time>
+                                    <div class="Med">
+                                    <img
+                                        src="https://d2go4np9frzvva.cloudfront.net/s3fs-public/Medtronic-Grande.jpg">
+                                    </div>
+                                    <h3 class="card__title r-title">Medtronic Shared Services Americas SAS</h3>
+                                    <h6 class="">--Analista de bases de datos</h6>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+        </section>
+        <br><br>
+        <hr><br>
+
+        <!--Fin de la seccion experiencia-->
+
+        <!--////// Referencias ///////-->
+        <div class="container mt-5 mb-3">
+            <h2 class=" titulo2"><b>Referencia Familiar</h2></b><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon">
+                                    <img src="./../static/images/chica.png">
+                                </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0"> Karoll Montenegro</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h6 class="heading">Cargo y/o profesión: Tecnólogo cnc<br>Telefono: 3214239094<br>Dirección:
+                                Calle 60 sur #66-20</h6>
+                            <div class="mt-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon">
+                                    <img src="./../static/images/señora.png">
+                                </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0">Yolanda Bejarano</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h6 class="heading">Cargo y/o profesión: Operaria<br>Telefono: 3147225136<br>Dirección:
+                                Calle 60 sur #66-20</h6>
+                            <div class="mt-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon">
+                                    <img src="./../static/images/mujeres.png">
+                                </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0">Yuli Neira</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h6 class="heading">Cargo y/o profesión: Enfermera-Esteticista<br>Telefono:
+                                3108059619<br>Dirección: Calle 60 sur #66-20</h6>
+                            <div class="mt-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <hr><br>
+        <!--Fin de la seccion referencias-->
+
+        <!--//////Intereses////////////////-->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="container verticalLine1">
+                    <div class="col-12">
+                        <h2 class=" titulo2"><b>Intereses</h2></b>
+
+                        <div class="row contact-info">
+                            <div class="col-md-4">
+                                <div class="contact-address">
+                                    <h3>Patinaje</h3> 
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="contact-phone">
+                                    <h3>Lectura </h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="contact-email">
+                                    <h3>Cocinar</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--///////   LOADING     //////////-->
+
+        <script>
+            window.onload = function () {
+                var contenedor = document.getElementById('contenedor_carga');
+
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+            }
+        </script>
+
+
+        <!--Template Footer-->
+        <%- include('templates/footer'); %>
+
+            <!--///////   LOADING     //////////-->
+
+    </body>
+
+    </html>

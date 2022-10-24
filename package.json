@@ -1,0 +1,32 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Introduccion a backend Java",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DValentinaBejarano/Portafolio_Danna-Bejarano.git"
+  },
+  "keywords": [
+    "export",
+    "module",
+    "require"
+  ],
+  "author": "Danna Bejarano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DValentinaBejarano/Portafolio_Danna-Bejarano.git"
+  },
+  "homepage": "https://github.com/DValentinaBejarano/Portafolio_Danna-Bejarano.git",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
