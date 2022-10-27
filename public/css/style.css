@@ -1091,6 +1091,7 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
@@ -1176,11 +1177,55 @@ p:last-child {
   justify-content: center;
   font-size: 39px
 }
-.Med img{
+
+.Med img {
   width: 10em;
 }
+
 @media (max-width: 900px) {
-  .Med img{
+  .Med img {
     display: none;
+  }
+}
+
+
+@media (max-width: 200px) {
+
+  form input,
+  form textarea {
+    margin-bottom: 10px;
+    width: 16em;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    color: #666052;
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  form input,
+  form textarea {
+    margin-bottom: 10px;
+    width: 16em;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    color: #666052;
+    font-size: 1em;
+  }
+
+  .foto_form {
+    display: none;
+  }
+
+  .foto {
+    float: left;
+    width: 200px;
+    height: 230px;
+    border-radius: 100px;
+    padding-left: 11px;
+    margin: 0 auto;
+    margin-bottom: 2em;
   }
 }
